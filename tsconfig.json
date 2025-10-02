@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "paths": {
+      "@routes/*": ["./src/routes/*"],
+      "@models/*": ["./src/models/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@database/*": ["./src/database/*"],
+      "@middleware/*": ["./src/middleware/*"],
+      "@config/*": ["./src/config/*"],
+      "@lib/*": ["./src/lib/*"]
+    }
+  },
+  "include": ["global.d.ts", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
