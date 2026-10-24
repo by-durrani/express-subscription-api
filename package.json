@@ -4,9 +4,9 @@
   "main": "dist/main.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch src/main.ts",
-    "build": "bun build src/main.ts --outdir=dist --target=node",
-    "start": "node dist/main.js"
+    "dev": "node init && bun run --watch src/main.ts",
+    "build": "node init && bun build src/main.ts --outdir=dist --target=node",
+    "start": "node init && node dist/main.js"
   },
   "author": "by-durrani",
   "license": "ISC",
